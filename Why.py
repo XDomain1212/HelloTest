@@ -17,13 +17,13 @@ address = vision_service_address + "analyze"
 # According to the documentation for the analyze image function 
 # There are three optional parameters: language, details & visualFeatures
 parameters  = {'visualFeatures':'Description,Color',
-               'language':'en'}
+               'language':'zh'}
 
 # We need the key to access our Computer Vision Service
 subscription_key = "cf229a23c3054905b5a8ad512edfa9dd"
 
 # Open the image file to get a file object containing the image to analyze
-image_path = "./TestImages/PolarBear.jpg"
+image_path = "./TestImages/FeedingKangaroo.jpg"
 image_data = open(image_path, 'rb').read()
 
 # According to the documentation for the analyze image function
@@ -57,4 +57,3 @@ for item in results['description']['tags']:
 
 print('caption text')
 print(results['description']['captions'][0]['text'])
-
