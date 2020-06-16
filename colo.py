@@ -1,3 +1,4 @@
 from colorama import init,Fore
-name = input('Please input your name:')
-print(Fore.BLUE + "Hello,"+Fore.GREEN +name)
+init(autoreset=True)
+name =input('Please input your name:')
+print(Fore.BLUE+"Hello,"+Fore.RED+name+'  '+Fore.RESET+'Welcome Home!')
