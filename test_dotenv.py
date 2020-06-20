@@ -6,4 +6,3 @@ import os
 passw=os.getenv('password')
 
 print(passw)
- 
