@@ -1,12 +1,14 @@
-def get_hello(name:str) -> str:
-    """
-    This is a hello function 
-    
-    name is string type 
+# Sort alphabetically
+data_base = [
+    {'name': 'Susan', 'age': 50},
+    {'name': 'Christopher', 'age': 47}
+]
 
-    it's return a string type 
-    """
-    print('Hello ' + name)
+data_base.sort(key=lambda item: item['name'])
+print('-- alphabetically --')
+print(data_base)
 
-
-get_hello()
+# Sort by length of name (shortest to longest)
+data_base.sort(key=lambda item: len(item['name']))
+print('-- length --')
+print(data_base)
