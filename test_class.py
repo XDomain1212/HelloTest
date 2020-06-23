@@ -13,9 +13,9 @@ class Student(Person):
         print(f"Hey, I'm a student. My name is {self.name} . Hello !")
 
 
-# person=Person('Lee Min')
-# print(person)
-# person.say_hello()
+person=Person('Lee Min')
+print(person)
+person.say_hello()
 
 # student1=Student("Lee Min")
 # print(student1)
